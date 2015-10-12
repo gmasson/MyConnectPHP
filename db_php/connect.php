@@ -1,5 +1,6 @@
 <?php
-
+  include 'info.php';
+  
   //...
 
 ?>
