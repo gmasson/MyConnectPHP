@@ -1,4 +1,3 @@
-# MyConnectPHP 1.0
+## MyConnectPHP 1.0
 
-New connection to MySQL in PHP
-
+PDO connection to MySQL in PHP
