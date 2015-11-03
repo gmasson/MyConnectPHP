@@ -1,0 +1,16 @@
+{
+  "name": "gmasson/myconnectphp",
+  "type": "application",
+  "description": "PDO connection to MySQL in PHP",
+  "keywords": [ "application", "framework", "php", "mysql", "connect", "back-end", "web" ],
+  "license": "MIT",
+  "homepage": "https://gmasson.github.io/MyConnectPHP",
+  "authors": [
+    {
+      "name": "Gabriel Masson",
+      "email": "professorgmasson@gmail.com",
+      "homepage": "http://gmasson.com.br",
+      "role": "Developer"
+    }
+  ]
+}
