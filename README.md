@@ -1,13 +1,8 @@
 ## MyConnectPHP v1.0
-Conexão PDO do MySQL em PHP
+MySQL PDO connection in PHP
 
-### Estrutura
-Exemplos de utilização no arquivo ***example.php***
+### Structure
+Examples of use in file ***example.php***
 
 ### Base
-Arquitetura de pastas baseado em [From-To](https://github.com/gmasson/From-To)
-
-
-=========================
-
-[Text in english ->](https://github.com/gmasson/MyConnectPHP/blob/master/en_README.md)
+Folder based on architecture [From-To](https://github.com/gmasson/From-To)
