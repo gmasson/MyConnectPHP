@@ -1,4 +1,14 @@
 <?php
-  include 'info.php';
-  try { $connect_mysql = new PDO("mysql:host=$hostname;dbname=$database;charset=utf8", $username, $password); }
-  catch(PDOException $e) { die("Oops, an error occurred"); }
+
+$db = array(
+  'type' => 'mysql',
+  'host' => 'localhost:3306',
+  'name' => 'database_name',
+  'user' => 'root',
+  'pass' => 'root'
+);
+
+# MySQL
+$connect = new PDO("{$db['type']}:host={$db['host']};dbname={$db['name']}", "{$db['user']}", "{$db['pass']}");
+$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$connect->exec("set names utf8");
