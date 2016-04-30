@@ -1,4 +1,4 @@
-## MyConnectPHP v1.0
+## MyConnectPHP v1.5
 MySQL PDO connection in PHP
 
 ### Structure
