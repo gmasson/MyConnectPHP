@@ -1,11 +1,10 @@
 <?php
-
   include 'database.php';
   
   // Connection examples
 
   /* INSERT */
-  $insert = $database_conexBD->prepare("INSERT INTO users (name, email) VALUES (:name, :email)"); 
+  $insert = $database_conexBD->prepare("INSERT INTO users (name, email) VALUES (:name, :email)");
   $insert->bindParam(":name","Full Name"); 
   $insert->bindParam(":email","email@email.com"); 
   $insert->execute();
