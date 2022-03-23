@@ -1,28 +1,28 @@
 <?php
-  include 'database.php';
-  
-  // Connection examples
+/**
+ * PDOConn - Connection examples
+*/
 
-  /* INSERT */
-  $insert = $database_conexBD->prepare("INSERT INTO users (name, email) VALUES (:name, :email)");
-  $insert->bindValue(":name", "Full Name"); 
-  $insert->bindValue(":email", "email@email.com"); 
-  $insert->execute();
+include 'database.php';
 
-  /* DELETE */
-  $delete = $database_conexBD->prepare("DELETE FROM users WHERE id=:id");
-  $delete->bindValue( ":id", "1", PDO::PARAM_STR );
-  $delete->execute();
+/* INSERT */
+$insert = $database_conexBD->prepare("INSERT INTO users (name, email) VALUES (:name, :email)");
+$insert->bindValue(":name", "Full Name"); 
+$insert->bindValue(":email", "email@email.com"); 
+$insert->execute();
 
-  /* UPDATE */
-  $update = $database_conexBD->prepare("UPDATE users SET name=:name WHERE id=:id");
-  $update->bindValue(":name", "Full Name"); 
-  $update->bindValue(":id", "1"); 
-  $update->execute();
+/* DELETE */
+$delete = $database_conexBD->prepare("DELETE FROM users WHERE id=:id");
+$delete->bindValue( ":id", "1", PDO::PARAM_STR );
+$delete->execute();
 
-  /* SELECT */
-  $select = $database_conexBD->prepare("SELECT * FROM users WHERE name LIKE :search");
-  $select->bindValue( ":search", "%test%" );
-  $select->execute();
+/* UPDATE */
+$update = $database_conexBD->prepare("UPDATE users SET name=:name WHERE id=:id");
+$update->bindValue(":name", "Full Name"); 
+$update->bindValue(":id", "1"); 
+$update->execute();
 
-?>
+/* SELECT */
+$select = $database_conexBD->prepare("SELECT * FROM users WHERE name LIKE :search");
+$select->bindValue( ":search", "%test%" );
+$select->execute();
