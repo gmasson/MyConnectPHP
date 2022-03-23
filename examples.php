@@ -1,9 +1,10 @@
 <?php
 /**
- * PDOConn - Connection examples
+ * PDO Drop
+ * Connection examples
 */
 
-include 'database.php';
+require 'database.php';
 
 /* INSERT */
 $insert = $database_conexBD->prepare("INSERT INTO users (name, email) VALUES (:name, :email)");
