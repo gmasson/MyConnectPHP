@@ -1,6 +1,7 @@
 <?php
 /**
- * PDOConn - Database 
+ * PDO Drop
+ * Database 
 */
 
 // Database
